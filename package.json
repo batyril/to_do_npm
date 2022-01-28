@@ -12,6 +12,7 @@
     "date-fns": "^2.28.0"
   },
   "devDependencies": {
+    "eslint": "^8.8.0",
     "parcel": "^2.2.1"
   }
 }

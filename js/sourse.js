@@ -11,6 +11,7 @@ UI_ELEMENTS.FORM_HIGH.addEventListener('submit', function(){
     createTask(massage);
 })
 
+
 function createTask(text){
     let div = document.createElement('div');
     div.className = "hight_block";
@@ -23,7 +24,7 @@ UI_ELEMENTS.CLOSE_CHECK_HIGH.addEventListener('click',deleteTask)
 function deleteTask(event){
     if(event.target.className === 'close_img'){
         event.target.parentNode.parentNode.remove()
-    };
+    }
 }
 
 UI_ELEMENTS.CLOSE_CHECK_HIGH.addEventListener('click',completedTask)
@@ -57,7 +58,7 @@ UI_ELEMENTS.CLOSE_CHECK_LOW.addEventListener('click',deleteTask2)
 function deleteTask2(event){
     if(event.target.className === 'close_img'){
         event.target.parentNode.parentNode.remove()
-    };
+    }
 }
 
 UI_ELEMENTS.CLOSE_CHECK_LOW.addEventListener('click',completedTask2)
