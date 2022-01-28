@@ -1,4 +1,7 @@
-import {UI_ELEMENTS} from "../js/view.js";
+import {UI_ELEMENTS} from "./view.js";
+import { format } from 'date-fns';
+
+let date = format(new Date(), "H:mm d/LLLL");
 
 
 UI_ELEMENTS.FORM_HIGH.addEventListener('submit', function(){
@@ -11,7 +14,7 @@ UI_ELEMENTS.FORM_HIGH.addEventListener('submit', function(){
 function createTask(text){
     let div = document.createElement('div');
     div.className = "hight_block";
-    div.innerHTML = `<div class="check"><img class="check_img" width="21px" height="21px" src="icon/Ellipse 3.svg" alt=""></div><p> ${text} </p><div class="close"><img class="close_img" src="icon/close-icon.svg" alt=""></div></div>`;
+    div.innerHTML = `<div class="check"><img class="check_img" width="21px" height="21px" src="icon/Ellipse 3.svg" alt=""></div><p> ${text} ${date} </p><div class="close"><img class="close_img" src="icon/close-icon.svg" alt=""></div></div>`;
     UI_ELEMENTS.MAIN_BLOCK_HIGH.after(div)
 }
 
@@ -45,7 +48,7 @@ UI_ELEMENTS.FORM_LOW.addEventListener('submit', function(){
 function createTask2(text){
     let div_low = document.createElement('div');
     div_low.className = "low_block";
-    div_low.innerHTML = `<div class="check"><img class="check_img" width="21px" height="21px" src="icon/Ellipse 3.svg" alt=""></div><p> ${text} </p><div class="close"><img class="close_img" src="icon/close-icon.svg" alt=""></div></div>`;
+    div_low.innerHTML = `<div class="check"><img class="check_img" width="21px" height="21px" src="icon/Ellipse 3.svg" alt=""></div><p> ${text} ${date} </p><div class="close"><img class="close_img" src="icon/close-icon.svg" alt=""></div></div>`;
     UI_ELEMENTS.MAIN_BLOCK_LOW.after(div_low)
 }
 
