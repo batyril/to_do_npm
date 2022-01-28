@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <section class="to_do_list">
+
+        <div class="container" >
+
+            <h1 class="to_do_title"> &#128221;TO DO LIST:</h1>
+
+            <div class="to_do_list_high">
+                <div class="high_text">
+                    &#128316; high priority
+                </div>
+                <div class="hight_new_task">
+                    <form class="form_high" action=' ' method=' ' >
+                        <input class="input_high"  placeholder="Добавить" type ='text' name='new_task' >
+                    </form>
+                     </div>
+                <div class="hight_block">
+                    <div  class="check">
+                        <img class="check_img" width="21px" height="21px" src="icon/Ellipse 3.svg" alt="">
+                    </div>
+                    <p>
+                        Опубликовать сайт на GitHub Pages
+                    </p>
+
+                    <div class="close"><img class="close_img" src="icon/close-icon.svg" alt=""></div>
+                </div>
+                <div class="hight_block "> 
+                    <div class="check">
+                        <img class="check_img" width="21px" height="21px" src="icon/Ellipse 3.svg" alt="">
+                    </div>
+                    <p>Сдать экзамен</p>
+                    <div class="close"><img class="close_img" src="icon/close-icon.svg" alt=""></div>
+                </div>
+                <div class="hight_block checked"> 
+                    <div class="check">
+                        <img class="check_img" width="21px" height="21px" src="icon/Group 7.svg" alt="">
+                    </div>
+                    <p>Сверстать этот TODO list</p>
+                    <div class="close"><img  class="close_img" src="icon/close-icon.svg" alt=""></div>
+                </div>
+            </div>
+
+
+
+            <div class="to_do_list_low">
+                <div class="low_text">
+                    &#128317;low priority
+                </div>
+                <div class="low_new_task">
+                    <form class="form_low"  action=' ' method='GET' >
+                        <input class="input_low"  placeholder="Добавить" type ='text' name='new_task' >
+                    </form> 
+                </div>
+                <div class="low_block "> 
+                    <div class="check">
+                        <img class="check_img" width="21px" height="21px" src="icon/Ellipse 3.svg" alt="">
+                    </div>
+                    <p>Сходить в спортзал</p>
+                    <div class="close"><img class="close_img" src="icon/close-icon.svg" alt=""></div>
+                </div>
+                <div class="low_block checked">
+                    <div class="check">
+                        <img class="check_img" width="21px" height="21px" src="icon/Ellipse 3.svg" alt="">
+                    </div>
+                    <p>Посмотреть ютуб</p>
+                    <div class="close"><img class="close_img" src="icon/close-icon.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+    <script type="module" src="js/sourse.js"></script>
+    <script type="module" src="js/view.js"></script>
+</html> 
